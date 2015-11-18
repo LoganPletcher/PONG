@@ -1,0 +1,39 @@
+﻿Build started 11/16/2015 8:01:40 PM.
+     1>Project "D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\Your Project.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\include\SDL" /I"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\include\OpenGL" /I"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\include\Graphics" /I"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\include\Math" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt GameLoop.cpp
+         GameLoop.cpp
+     1>GameLoop.cpp(19): warning C4244: 'initializing': conversion from 'clock_t' to 'float', possible loss of data
+     1>GameLoop.cpp(54): warning C4244: '=': conversion from 'clock_t' to 'float', possible loss of data
+     1>GameLoop.cpp(55): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+     1>D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\Dependencies\include\Graphics\Graphics.h(293): warning C4244: 'argument': conversion from 'const float' to 'GLubyte', possible loss of data
+         GameLoop.cpp(114): note: see reference to function template instantiation 'void Graphics::DrawLine<float>(const System::Point2D<float> &,const System::Point2D<float> &,const System::Color<float> &)' being compiled
+     1>D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\Dependencies\include\Graphics\Graphics.h(267): warning C4244: 'argument': conversion from 'const float' to 'GLubyte', possible loss of data
+         GameLoop.cpp(118): note: see reference to function template instantiation 'void Graphics::DrawRect<float>(const System::Point2D<float> &,const System::Size2D<float> &,const System::Color<float> &)' being compiled
+     1>D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\Dependencies\include\Graphics\Graphics.h(352): warning C4244: 'argument': conversion from 'const int' to 'GLfloat', possible loss of data
+         GameLoop.cpp(121): note: see reference to function template instantiation 'void Graphics::DrawCircle<int>(const System::Point2D<int>,const T,const T,const System::Color<T> &)' being compiled
+                 with
+                 [
+                     T=int
+                 ]
+     1>D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\Dependencies\include\Graphics\Graphics.h(356): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+     1>D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\Dependencies\include\Graphics\Graphics.h(357): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Release\Your Project.exe" /NOLOGO /LIBPATH:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\lib" /LIBPATH:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\lib\SDL" /LIBPATH:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\lib\OpenGL" /LIBPATH:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\lib\MathLib" "SDL-OpenGL Student Library.lib" Math.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Release\Your Project.pdb" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Release\Your Project.lib" /MACHINE:X86 /SAFESEH Release\GameLoop.obj
+         Release\Source.obj
+     1>SDL-OpenGL Student Library.lib(Graphics.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in GameLoop.obj
+     1>SDL-OpenGL Student Library.lib(Graphics.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in GameLoop.obj
+     1>SDL-OpenGL Student Library.lib(Graphics.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:ICF' specification
+     1>SDL-OpenGL Student Library.lib(Window.obj) : error LNK2038: mismatch detected for '_ITERATOR_DEBUG_LEVEL': value '2' doesn't match value '0' in GameLoop.obj
+     1>SDL-OpenGL Student Library.lib(Window.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' in GameLoop.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>SDL-OpenGL Student Library.lib(Graphics.obj) : error LNK2001: unresolved external symbol __imp___invalid_parameter
+     1>SDL-OpenGL Student Library.lib(Window.obj) : error LNK2001: unresolved external symbol __imp___invalid_parameter
+     1>SDL-OpenGL Student Library.lib(Graphics.obj) : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+     1>SDL-OpenGL Student Library.lib(Window.obj) : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
+     1>D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Release\Your Project.exe : fatal error LNK1120: 2 unresolved externals
+     1>Done Building Project "D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\Your Project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:10.62

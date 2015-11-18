@@ -1,0 +1,37 @@
+﻿Build started 11/4/2015 4:25:33 PM.
+     1>Project "D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\Your Project.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\MathLibFolder" /I"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\include\Graphics" /I"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\include\OpenGL" /I"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\include\SDL" /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt GameLoop.cpp Source.cpp
+         Source.cpp
+         GameLoop.cpp
+     1>d:\users\logan\documents\github\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(267): warning C4244: 'argument': conversion from 'const float' to 'GLubyte', possible loss of data
+         d:\users\logan\documents\github\aie_framework-2015\your project\gameloop.cpp(97): note: see reference to function template instantiation 'void Graphics::DrawRect<float>(const System::Point2D<float> &,const System::Size2D<float> &,const System::Color<float> &)' being compiled
+     1>d:\users\logan\documents\github\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(293): warning C4244: 'argument': conversion from 'const float' to 'GLubyte', possible loss of data
+         d:\users\logan\documents\github\aie_framework-2015\your project\gameloop.cpp(102): note: see reference to function template instantiation 'void Graphics::DrawLine<float>(const System::Point2D<float> &,const System::Point2D<float> &,const System::Color<float> &)' being compiled
+     1>d:\users\logan\documents\github\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(311): warning C4244: 'argument': conversion from 'const float' to 'GLubyte', possible loss of data
+         d:\users\logan\documents\github\aie_framework-2015\your project\gameloop.cpp(105): note: see reference to function template instantiation 'void Graphics::DrawPoint<float>(const System::Point2D<float> &,const System::Color<float> &)' being compiled
+     1>d:\users\logan\documents\github\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(333): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+         d:\users\logan\documents\github\aie_framework-2015\your project\gameloop.cpp(107): note: see reference to function template instantiation 'void Graphics::DrawRing<int>(const System::Point2D<int>,const T,const T,const System::Color<T> &)' being compiled
+                 with
+                 [
+                     T=int
+                 ]
+     1>d:\users\logan\documents\github\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(334): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+     1>d:\users\logan\documents\github\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(352): warning C4244: 'argument': conversion from 'const int' to 'GLfloat', possible loss of data
+         d:\users\logan\documents\github\aie_framework-2015\your project\gameloop.cpp(108): note: see reference to function template instantiation 'void Graphics::DrawCircle<int>(const System::Point2D<int>,const T,const T,const System::Color<T> &)' being compiled
+                 with
+                 [
+                     T=int
+                 ]
+     1>d:\users\logan\documents\github\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(356): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+     1>d:\users\logan\documents\github\aie_framework-2015\your project\dependencies\include\graphics\graphics.h(357): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\x64\Debug\Your Project.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\MathLibFolder" /LIBPATH:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\OpenGL" /LIBPATH:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\SDL" /LIBPATH:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\\Dependencies\lib" "SDL-OpenGL Student Library.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\x64\Debug\Your Project.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\x64\Debug\Your Project.lib" /MACHINE:X64 x64\Debug\GameLoop.obj
+         x64\Debug\Source.obj
+     1>SDL-OpenGL Student Library.lib(Graphics.obj) : fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'
+     1>Done Building Project "D:\Users\Logan\Documents\GitHub\AIE_Framework-2015\Your Project\Your Project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.79
